@@ -8,7 +8,7 @@ app = Dash(
 	__name__, external_stylesheets=[dbc.themes.SLATE],
 	use_pages=True
 )
-
+server=app.server
 app.layout = dbc.Container(
 	children=[
 		dbc.NavbarSimple(
