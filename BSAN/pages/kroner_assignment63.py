@@ -5,7 +5,7 @@ import plotly.express as px
 import dash_bootstrap_components as dbc
 
 dash.register_page( __name__, path='/' )
-
+server=app.server
 data = """
 Player,Stats,Year,Value
 Wayne Gretzky,Goals,1,51
