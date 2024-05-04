@@ -82,7 +82,7 @@ df = pd.read_excel('NHLPoints.xlsx')
 df_points = df[df['Stats'] == 'points']
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SLATE] )
-
+server=app.server
 
 app.layout = html.Div([
     html.H1("NHL Player Points"),
